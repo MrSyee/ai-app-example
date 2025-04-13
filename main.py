@@ -17,5 +17,6 @@ def main():
 
     ResearchCrew().kickoff(inputs)
 
+
 if __name__ == "__main__":
     main()

@@ -1,4 +1,4 @@
-from crewai import Agent, Task, Crew, Process
+from crewai import Agent, Crew, Process, Task
 from crewai_tools import ScrapeWebsiteTool, SerperDevTool
 
 
@@ -33,7 +33,7 @@ class ResearchCrew:
             expected_output="개요, 독자 분석, SEO 키워드, 참고 자료가 포함된 종합적인 문서.",
             agent=self.researcher,
         )
-        
+
         self.reporting = Task(
             description=(
                 "1. 콘텐츠를 사용하여 매력적인 보고서를 작성하세요.\n"
