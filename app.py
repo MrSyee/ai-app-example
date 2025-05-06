@@ -17,7 +17,7 @@ st.image("./resource/cover.jpg", use_container_width=True)
 
 
 def initialize_session():
-    with st.spinner("🔄 MCP 서버에 연결 중..."):
+    with st.spinner("🔄 Agent 초기화 중..."):
         model = ChatOpenAI(
             model="gpt-4o-mini",
             temperature=0.1,

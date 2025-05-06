@@ -58,3 +58,9 @@ class ResearchCrew:
             process=Process.sequential,
             verbose=True,
         ).kickoff(*args)
+
+
+if __name__ == "__main__":
+    crew = ResearchCrew()
+    result = crew.kickoff({"topic": "파이썬 프로그래밍"})
+    print("\n\nReport has been saved to outputs/report.md")

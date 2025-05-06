@@ -1,3 +1,12 @@
+
+setup:
+	uv venv
+	uv sync
+
+run:
+	streamlit run app.py
+
+
 format:
 	uv run black .
 	uv run isort .
@@ -5,4 +14,3 @@ format:
 
 lint:
 	uv run ruff check .
-
